@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import CourseBasicInfo from "../_components/CourseBasicInfo";
 import { FiShare2 } from "react-icons/fi";
-import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
+// import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -75,7 +75,7 @@ function FinishScreen({ params }) {
       </h2>
       <CourseBasicInfo course={course} refreshData={() => console.log()} />
       <h2 className="mt-3">Course URL:</h2>
-      <div className="text-center text-gray-400 border p-2 rounded flex gap-2 items-center justify-between">
+      <div className="text-center text-gray-400 border p-2 rounded flex gap-1 items-center justify-between">
         <span className="truncate">{courseURL}</span>
         <HiOutlineClipboardDocumentCheck
           className="h-5 w-5 cursor-pointer"
