@@ -31,6 +31,7 @@ function CourseStart({ params }) {
   }
   return (
     <div>
+
       {/* Chapter list sidebar */}
       <div className={`fixed md:w-64 ${showBar ? 'w-full bg-white text-black':'hidden'} md:block h-full border-r shadow-sm overflow-y-scroll scroll-smooth`}>
         
